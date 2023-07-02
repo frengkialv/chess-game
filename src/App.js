@@ -79,7 +79,7 @@ function App() {
         <div
           className={`${
             isGameOver && "blur-sm"
-          } h-[25rem] w-[25rem] sm:h-[40rem] sm:w-[40rem]`}
+          } h-[20rem] w-[20rem] sm:h-[35rem] sm:w-[35rem]`}
         >
           <Board boards={boards} />
         </div>
