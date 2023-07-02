@@ -45,7 +45,7 @@ function App() {
       <div>
         <div className="popover__wrapper mb-1">
           <button
-            className="popover__title w-fit cursor-pointer gap-2 whitespace-nowrap rounded-md border border-gray-300 bg-[#ebecd0] px-4 py-1 text-base font-medium text-[#273d11] sm:text-2xl"
+            className="popover__title w-fit cursor-pointer gap-2 whitespace-nowrap rounded-md border border-gray-300 bg-[#ebecd0] px-4 py-1 text-base font-medium text-[#273d11] sm:text-lg"
             onClick={() => setShowLayerNewGame(true)}
           >
             New Game
