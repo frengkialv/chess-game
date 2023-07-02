@@ -52,17 +52,19 @@ function App() {
           </button>
           {showLayerNewGame && (
             <Outside onClick={() => setShowLayerNewGame(false)}>
-              <div className="popover__content mt-8 rounded">
-                <p className="popover__message text-white">Start a new game?</p>
+              <div className="popover__content left-[-30px] mt-8 w-[10rem] rounded py-3 sm:left-[-50px] sm:w-[13rem] sm:py-4">
+                <p className="popover__message text-sm text-white sm:text-base">
+                  Start a new game?
+                </p>
                 <div className="mt-2 flex justify-center gap-x-2">
                   <button
-                    className="rounded-md bg-[#494745] px-4 py-1 font-medium text-white"
+                    className="rounded-md bg-[#494745] px-4 py-1 text-sm font-medium text-white sm:text-base"
                     onClick={() => setShowLayerNewGame(false)}
                   >
                     Cancel
                   </button>
                   <button
-                    className="rounded-md bg-[#92c15a] px-4 py-1 font-medium text-white"
+                    className="rounded-md bg-[#92c15a] px-4 py-1 text-sm font-medium text-white sm:text-base"
                     onClick={() => {
                       resetGame();
                       setShowLayerNewGame(false);
