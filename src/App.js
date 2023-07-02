@@ -45,7 +45,7 @@ function App() {
       <div>
         <div className="popover__wrapper mb-1">
           <button
-            className="popover__title w-fit cursor-pointer gap-2 whitespace-nowrap rounded-md border border-gray-300 bg-[#ebecd0] px-4 py-1 font-medium text-[#273d11]"
+            className="popover__title w-fit cursor-pointer gap-2 whitespace-nowrap rounded-md border border-gray-300 bg-[#ebecd0] px-4 py-1 text-base font-medium text-[#273d11] sm:text-2xl"
             onClick={() => setShowLayerNewGame(true)}
           >
             New Game
@@ -76,11 +76,15 @@ function App() {
           )}
         </div>
 
-        <div className={`${isGameOver && "blur-sm"} h-[600px] w-[600px]`}>
+        <div
+          className={`${
+            isGameOver && "blur-sm"
+          } h-[25rem] w-[25rem] sm:h-[40rem] sm:w-[40rem]`}
+        >
           <Board boards={boards} />
         </div>
 
-        <div className="text-end text-2xl text-white">
+        <div className="text-end text-base text-white sm:text-2xl">
           {turn === "w" ? "White" : "Black"} Turn
         </div>
       </div>
