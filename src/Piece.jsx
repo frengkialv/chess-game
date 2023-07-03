@@ -11,10 +11,13 @@ function Piece({ piece: { type, color }, position }) {
       return { isDragging: !!dragging.isDragging() };
     },
   }));
+  const opts = {
+    enableTouchEvents: true,
+  };
 
   return (
     <>
-      <DndProvider backend={TouchBackend}>
+      <DndProvider backend={TouchBackend} options={opts}>
         <DragPreviewImage
           connect={dragPreview}
           src={image}
