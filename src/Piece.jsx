@@ -21,7 +21,7 @@ function Piece({ piece: { type, color }, position }) {
         <DragPreviewImage
           connect={dragPreview}
           src={image}
-          className="h-12 w-12"
+          className="target-element h-12 w-12"
         />
         <div
           className={`${
