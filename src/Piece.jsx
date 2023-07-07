@@ -21,12 +21,12 @@ function Piece({ piece: { type, color }, position }) {
         <DragPreviewImage
           connect={dragPreview}
           src={image}
-          className="target-element h-12 w-12"
+          className="h-12 w-12"
         />
         <div
           className={`${
             isDragging ? "opacity-0" : "opacity-[1]"
-          } flex h-full w-full cursor-grab items-center justify-center`}
+          } target-element flex h-full w-full cursor-grab items-center justify-center`}
         >
           {/* {position} */}
           <img
